@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C21024E72BC0B3E000BB0614 /* CustomTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21024E22BC0B3DF00BB0614 /* CustomTF.swift */; };
-		C21024E82BC0B3E000BB0614 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21024E32BC0B3E000BB0614 /* ForgotPassword.swift */; };
-		C21024E92BC0B3E000BB0614 /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21024E42BC0B3E000BB0614 /* OTPView.swift */; };
-		C21024EA2BC0B3E000BB0614 /* TransparentBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21024E52BC0B3E000BB0614 /* TransparentBlurView.swift */; };
-		C21024EB2BC0B3E000BB0614 /* LogInAndSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21024E62BC0B3E000BB0614 /* LogInAndSignUp.swift */; };
+		C21025412BC0B8D000BB0614 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21025302BC0B8D000BB0614 /* LoginViewModel.swift */; };
+		C21025462BC0B8D000BB0614 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21025372BC0B8D000BB0614 /* ForgotPassword.swift */; };
+		C21025472BC0B8D000BB0614 /* CustomTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21025382BC0B8D000BB0614 /* CustomTF.swift */; };
+		C21025482BC0B8D000BB0614 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21025392BC0B8D000BB0614 /* Login.swift */; };
+		C21025492BC0B8D000BB0614 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C210253A2BC0B8D000BB0614 /* Home.swift */; };
+		C210254A2BC0B8D000BB0614 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C210253B2BC0B8D000BB0614 /* SignUp.swift */; };
+		C210254B2BC0B8D000BB0614 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C210253C2BC0B8D000BB0614 /* GradientButton.swift */; };
+		C210254C2BC0B8D000BB0614 /* LogINVIEWCONTENT.swift in Sources */ = {isa = PBXBuildFile; fileRef = C210253D2BC0B8D000BB0614 /* LogINVIEWCONTENT.swift */; };
+		C210254D2BC0B8D000BB0614 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C210253F2BC0B8D000BB0614 /* View+Extensions.swift */; };
 		C28A3B962BBF18EE000093A9 /* EcoImpactApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28A3B952BBF18EE000093A9 /* EcoImpactApp.swift */; };
 		C28A3B982BBF18EE000093A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28A3B972BBF18EE000093A9 /* ContentView.swift */; };
 		C28A3B9A2BBF18F1000093A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C28A3B992BBF18F1000093A9 /* Assets.xcassets */; };
@@ -19,11 +23,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C21024E22BC0B3DF00BB0614 /* CustomTF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomTF.swift; path = LogIn/CustomTF.swift; sourceTree = "<group>"; };
-		C21024E32BC0B3E000BB0614 /* ForgotPassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForgotPassword.swift; path = LogIn/ForgotPassword.swift; sourceTree = "<group>"; };
-		C21024E42BC0B3E000BB0614 /* OTPView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OTPView.swift; path = LogIn/OTPView.swift; sourceTree = "<group>"; };
-		C21024E52BC0B3E000BB0614 /* TransparentBlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransparentBlurView.swift; path = LogIn/TransparentBlurView.swift; sourceTree = "<group>"; };
-		C21024E62BC0B3E000BB0614 /* LogInAndSignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogInAndSignUp.swift; path = LogIn/LogInAndSignUp.swift; sourceTree = "<group>"; };
+		C21025302BC0B8D000BB0614 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		C21025372BC0B8D000BB0614 /* ForgotPassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
+		C21025382BC0B8D000BB0614 /* CustomTF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTF.swift; sourceTree = "<group>"; };
+		C21025392BC0B8D000BB0614 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		C210253A2BC0B8D000BB0614 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		C210253B2BC0B8D000BB0614 /* SignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		C210253C2BC0B8D000BB0614 /* GradientButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
+		C210253D2BC0B8D000BB0614 /* LogINVIEWCONTENT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogINVIEWCONTENT.swift; sourceTree = "<group>"; };
+		C210253F2BC0B8D000BB0614 /* View+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		C28A3B922BBF18EE000093A9 /* EcoImpact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoImpact.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28A3B952BBF18EE000093A9 /* EcoImpactApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoImpactApp.swift; sourceTree = "<group>"; };
 		C28A3B972BBF18EE000093A9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +50,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C210252E2BC0B8D000BB0614 /* LoginKit */ = {
+			isa = PBXGroup;
+			children = (
+				C210252F2BC0B8D000BB0614 /* ViewModel */,
+				C21025362BC0B8D000BB0614 /* Views */,
+				C210253D2BC0B8D000BB0614 /* LogINVIEWCONTENT.swift */,
+				C210253E2BC0B8D000BB0614 /* Helpers */,
+			);
+			path = LoginKit;
+			sourceTree = "<group>";
+		};
+		C210252F2BC0B8D000BB0614 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C21025302BC0B8D000BB0614 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C21025362BC0B8D000BB0614 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C21025372BC0B8D000BB0614 /* ForgotPassword.swift */,
+				C21025382BC0B8D000BB0614 /* CustomTF.swift */,
+				C21025392BC0B8D000BB0614 /* Login.swift */,
+				C210253A2BC0B8D000BB0614 /* Home.swift */,
+				C210253B2BC0B8D000BB0614 /* SignUp.swift */,
+				C210253C2BC0B8D000BB0614 /* GradientButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C210253E2BC0B8D000BB0614 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C210253F2BC0B8D000BB0614 /* View+Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		C28A3B892BBF18EE000093A9 = {
 			isa = PBXGroup;
 			children = (
@@ -63,11 +111,7 @@
 			children = (
 				C28A3B952BBF18EE000093A9 /* EcoImpactApp.swift */,
 				C28A3B972BBF18EE000093A9 /* ContentView.swift */,
-				C21024E22BC0B3DF00BB0614 /* CustomTF.swift */,
-				C21024E32BC0B3E000BB0614 /* ForgotPassword.swift */,
-				C21024E62BC0B3E000BB0614 /* LogInAndSignUp.swift */,
-				C21024E42BC0B3E000BB0614 /* OTPView.swift */,
-				C21024E52BC0B3E000BB0614 /* TransparentBlurView.swift */,
+				C210252E2BC0B8D000BB0614 /* LoginKit */,
 				C28A3B992BBF18F1000093A9 /* Assets.xcassets */,
 				C28A3B9B2BBF18F1000093A9 /* Preview Content */,
 			);
@@ -152,13 +196,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C21025482BC0B8D000BB0614 /* Login.swift in Sources */,
+				C210254C2BC0B8D000BB0614 /* LogINVIEWCONTENT.swift in Sources */,
 				C28A3B982BBF18EE000093A9 /* ContentView.swift in Sources */,
-				C21024E92BC0B3E000BB0614 /* OTPView.swift in Sources */,
 				C28A3B962BBF18EE000093A9 /* EcoImpactApp.swift in Sources */,
-				C21024E72BC0B3E000BB0614 /* CustomTF.swift in Sources */,
-				C21024EA2BC0B3E000BB0614 /* TransparentBlurView.swift in Sources */,
-				C21024EB2BC0B3E000BB0614 /* LogInAndSignUp.swift in Sources */,
-				C21024E82BC0B3E000BB0614 /* ForgotPassword.swift in Sources */,
+				C21025472BC0B8D000BB0614 /* CustomTF.swift in Sources */,
+				C210254B2BC0B8D000BB0614 /* GradientButton.swift in Sources */,
+				C21025412BC0B8D000BB0614 /* LoginViewModel.swift in Sources */,
+				C21025492BC0B8D000BB0614 /* Home.swift in Sources */,
+				C210254A2BC0B8D000BB0614 /* SignUp.swift in Sources */,
+				C210254D2BC0B8D000BB0614 /* View+Extensions.swift in Sources */,
+				C21025462BC0B8D000BB0614 /* ForgotPassword.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
