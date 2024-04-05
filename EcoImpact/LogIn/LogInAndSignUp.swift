@@ -6,12 +6,12 @@
 //
 
 import SwiftUI
-import Firebase
-import GoogleSignIn
-import GoogleSignInSwift
-import AuthenticationServices
-import FirebaseFirestore
-import FirebaseStorage
+//import Firebase
+//import GoogleSignIn
+//import GoogleSignInSwift
+//import AuthenticationServices
+//import FirebaseFirestore
+//import FirebaseStorage
 import UIKit
 
 struct LogInAndSignUp: View {
@@ -24,7 +24,7 @@ struct LogInAndSignUp: View {
     @State var goToHome: Bool = false
     @State var errorMessage: String = ""
     @State var showError: Bool = false
-    @ObservedObject var viewModel = CardsViewModel()
+//    @ObservedObject var viewModel = CardsViewModel()
     @State var showNewUserView: Bool = false
     //    @ObservedObject var vm = SignInWithGoogle()
     
@@ -55,7 +55,7 @@ struct LogInAndSignUp: View {
                     }
                     
                     Button {
-                        signInOrSignUpWithEmail()
+//                        signInOrSignUpWithEmail()
                     } label: {
                         Text(logIn ? "Login": "Sign Up")
                             .font(.title3)
@@ -85,7 +85,7 @@ struct LogInAndSignUp: View {
                             .clipShape(.rect(cornerRadius: 8, style: .continuous))
                     }
                     
-                    GoogleSignInButton(action: handleSignInButton)
+//                    GoogleSignInButton(action: handleSignInButton)
 //                        .overlay {
 //                            Button {
 //                                //
@@ -163,38 +163,23 @@ struct LogInAndSignUp: View {
                 .fill(.BGG)
                 .ignoresSafeArea()
         }
-        .sheet(isPresented: $showOTP, content: {
-            if #available(iOS 16.4, *) {
-                NavigationView {
-                    Login()
-                }
-                .presentationDetents([.height(300)])
-                .presentationCornerRadius(30)
-            } else {
-                NavigationView {
-                    Login()
-                }
-                .presentationDetents([.height(300)])
-            }
-        })
+//        .sheet(isPresented: $showOTP, content: {
+//            if #available(iOS 16.4, *) {
+//                NavigationView {
+//                    Login()
+//                }
+//                .presentationDetents([.height(300)])
+//                .presentationCornerRadius(30)
+//            } else {
+//                NavigationView {
+//                    Login()
+//                }
+//                .presentationDetents([.height(300)])
+//            }
+//        })
         .preferredColorScheme(.dark)
-        .fullScreenCover(isPresented: $goToHome) {
-            //            DispatchQueue.main.async {
-            NavigationView {
-                Home()
-                    .environmentObject(AuthViewModel())
-                    .environmentObject(CardsViewModel())
-            }
-            //            }
-            
-        }
         .alert(isPresented: $showError) {
             Alert(title: Text("Oh Oh! There's an error!"), message: Text(errorMessage), dismissButton: .default(Text("OK")))
-        }
-        .fullScreenCover(isPresented: $showNewUserView) {
-            NavigationView {
-                Profile()
-            }
         }
     }
     
@@ -303,47 +288,6 @@ struct LogInAndSignUp: View {
     //        }
     //    }
     
-    func handleSignInButton() {
-        guard let clientID = FirebaseApp.app()?.options.clientID else { return }
-                
-        // Create Google Sign In configuration object.
-        let config = GIDConfiguration(clientID: clientID)
-                
-        GIDSignIn.sharedInstance.configuration = config
-        GIDSignIn.sharedInstance.signIn(
-            withPresenting: Application_Utility.rootViewController) { signInResult, error in
-                guard let result = signInResult else {
-                    // Inspect error
-                    return
-                }
-                // If sign in succeeded, display the app's main content View.
-                print("hello")
-            }
-    }
-    
-    func signInOrSignUpWithEmail() {
-        if logIn {
-            Auth.auth().signIn(withEmail: email, password: password) { _, error in
-                if let error = error {
-                    self.errorMessage = error.localizedDescription
-                    self.showError = true
-                } else {
-                    self.goToHome = true
-                }
-            }
-        } else if !logIn {
-            if password == confirmPassword {
-                Auth.auth().createUser(withEmail: email, password: confirmPassword) { _, error in
-                    if let error = error {
-                        self.errorMessage = error.localizedDescription
-                        self.showError = true
-                    } else {
-                        self.showNewUserView = true
-                    }
-                }
-            }
-        }
-    }
     
     //    func handleSignInButton() async {
     //        print("Hello")
