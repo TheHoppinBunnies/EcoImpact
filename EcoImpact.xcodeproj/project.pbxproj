@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C21024E72BC0B3E000BB0614 /* CustomTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21024E22BC0B3DF00BB0614 /* CustomTF.swift */; };
+		C21024E82BC0B3E000BB0614 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21024E32BC0B3E000BB0614 /* ForgotPassword.swift */; };
+		C21024E92BC0B3E000BB0614 /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21024E42BC0B3E000BB0614 /* OTPView.swift */; };
+		C21024EA2BC0B3E000BB0614 /* TransparentBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21024E52BC0B3E000BB0614 /* TransparentBlurView.swift */; };
+		C21024EB2BC0B3E000BB0614 /* LogInAndSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21024E62BC0B3E000BB0614 /* LogInAndSignUp.swift */; };
 		C28A3B962BBF18EE000093A9 /* EcoImpactApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28A3B952BBF18EE000093A9 /* EcoImpactApp.swift */; };
 		C28A3B982BBF18EE000093A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28A3B972BBF18EE000093A9 /* ContentView.swift */; };
 		C28A3B9A2BBF18F1000093A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C28A3B992BBF18F1000093A9 /* Assets.xcassets */; };
@@ -14,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C21024E22BC0B3DF00BB0614 /* CustomTF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomTF.swift; path = LogIn/CustomTF.swift; sourceTree = "<group>"; };
+		C21024E32BC0B3E000BB0614 /* ForgotPassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForgotPassword.swift; path = LogIn/ForgotPassword.swift; sourceTree = "<group>"; };
+		C21024E42BC0B3E000BB0614 /* OTPView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OTPView.swift; path = LogIn/OTPView.swift; sourceTree = "<group>"; };
+		C21024E52BC0B3E000BB0614 /* TransparentBlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransparentBlurView.swift; path = LogIn/TransparentBlurView.swift; sourceTree = "<group>"; };
+		C21024E62BC0B3E000BB0614 /* LogInAndSignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogInAndSignUp.swift; path = LogIn/LogInAndSignUp.swift; sourceTree = "<group>"; };
 		C28A3B922BBF18EE000093A9 /* EcoImpact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoImpact.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28A3B952BBF18EE000093A9 /* EcoImpactApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoImpactApp.swift; sourceTree = "<group>"; };
 		C28A3B972BBF18EE000093A9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +63,11 @@
 			children = (
 				C28A3B952BBF18EE000093A9 /* EcoImpactApp.swift */,
 				C28A3B972BBF18EE000093A9 /* ContentView.swift */,
+				C21024E22BC0B3DF00BB0614 /* CustomTF.swift */,
+				C21024E32BC0B3E000BB0614 /* ForgotPassword.swift */,
+				C21024E62BC0B3E000BB0614 /* LogInAndSignUp.swift */,
+				C21024E42BC0B3E000BB0614 /* OTPView.swift */,
+				C21024E52BC0B3E000BB0614 /* TransparentBlurView.swift */,
 				C28A3B992BBF18F1000093A9 /* Assets.xcassets */,
 				C28A3B9B2BBF18F1000093A9 /* Preview Content */,
 			);
@@ -138,7 +153,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C28A3B982BBF18EE000093A9 /* ContentView.swift in Sources */,
+				C21024E92BC0B3E000BB0614 /* OTPView.swift in Sources */,
 				C28A3B962BBF18EE000093A9 /* EcoImpactApp.swift in Sources */,
+				C21024E72BC0B3E000BB0614 /* CustomTF.swift in Sources */,
+				C21024EA2BC0B3E000BB0614 /* TransparentBlurView.swift in Sources */,
+				C21024EB2BC0B3E000BB0614 /* LogInAndSignUp.swift in Sources */,
+				C21024E82BC0B3E000BB0614 /* ForgotPassword.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
