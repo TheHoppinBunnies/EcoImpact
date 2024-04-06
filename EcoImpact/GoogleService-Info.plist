@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyDD3lb_wUN-CCWR93SlH3gsKOSxRx-nEoY</string>
+	<string>AIzaSyCflghbWII4J1s-gMrVOZ2kR7OQOEXbtEg</string>
 	<key>GCM_SENDER_ID</key>
-	<string>769381566094</string>
+	<string>187826260708</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.LetsCodeBunnies.EcoImpact</string>
 	<key>PROJECT_ID</key>
-	<string>ecoimpact-1b501</string>
+	<string>ecoimpact-54a08</string>
 	<key>STORAGE_BUCKET</key>
-	<string>ecoimpact-1b501.appspot.com</string>
+	<string>ecoimpact-54a08.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:769381566094:ios:0d91e8e1e85c3749bfabdf</string>
+	<string>1:187826260708:ios:d8ed4a954501e70600faf1</string>
 </dict>
 </plist>
