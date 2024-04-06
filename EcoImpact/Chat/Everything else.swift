@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Foundation
 
 struct MessageBubble: View {
     var message: Message
@@ -16,52 +17,37 @@ struct MessageBubble: View {
             HStack {
                 Text(message.text)
                     .padding()
-                    .background(message.received ? Color("Gray") : Color("Peach"))
+                    .background(message.received ? Color(.light1) : Color(.blue))
                     .cornerRadius(30)
             }
             .frame(maxWidth: 300, alignment: message.received ? .leading : .trailing)
             .onTapGesture {
                 showTime.toggle()
             }
-            
-            if showTime {
-                Text("\(message.timestamp.formatted(.dateTime.hour().minute()))")
-                    .font(.caption2)
-                    .foregroundColor(.gray)
-                    .padding(message.received ? .leading : .trailing, 25)
-            }
+            .frame(maxWidth: .infinity, alignment: message.received ? .leading : .trailing)
+            .padding(message.received ? .leading : .trailing)
+            .padding(.horizontal, 10)
         }
-        .frame(maxWidth: .infinity, alignment: message.received ? .leading : .trailing)
-        .padding(message.received ? .leading : .trailing)
-        .padding(.horizontal, 10)
     }
 }
-
-struct MessageBubble_Previews: PreviewProvider {
-    static var previews: some View {
-        MessageBubble(message: Message(id: "12345", text: "I've been coding applications from scratch in SwiftUI and it's so much fun!", received: true, timestamp: Date()))
-    }
-}
-
-struct MessageField: View {
-    @EnvironmentObject var messagesManager: MessagesManager
+struct MessageFielda: View {
     @State private var message = ""
     
     var body: some View {
         HStack {
-            // Custom text field created below
             CustomTextField(placeholder: Text("Enter your message here"), text: $message)
                 .frame(height: 52)
                 .disableAutocorrection(true)
+                .background(Color("Gray"))
             
             Button {
-                messagesManager.sendMessage(text: message)
+                send(text: message)
                 message = ""
             } label: {
                 Image(systemName: "paperplane.fill")
                     .foregroundColor(.white)
                     .padding(10)
-                    .background(Color("Peach"))
+                    .background(Color(.green1))
                     .cornerRadius(50)
             }
         }
@@ -70,15 +56,22 @@ struct MessageField: View {
         .background(Color("Gray"))
         .cornerRadius(50)
         .padding()
+    
     }
 }
 
+func send(text:String) {
+    do{
+        let newMessage = Message(id: "\(UUID())", text: text, received: false)
+    }
+    
+}
 struct MessageField_Previews: PreviewProvider {
     static var previews: some View {
-        MessageField()
-            .environmentObject(MessagesManager())
+        MessageFielda()
     }
 }
+
 
 struct CustomTextField: View {
     var placeholder: Text
@@ -98,38 +91,23 @@ struct CustomTextField: View {
     }
 }
 
-import SwiftUI
 
 struct TitleRow: View {
-    var imageUrl = URL(string: "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8")
-    var name = "Sarah Smith"
+    var name = "Carbon Footprint Calculator"
     
     var body: some View {
         HStack(spacing: 20) {
-            AsyncImage(url: imageUrl) { image in
-                image.resizable()
+           
+                Image("rr").resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 50, height: 50)
                     .cornerRadius(50)
-            } placeholder: {
-                ProgressView()
-            }
             
             VStack(alignment: .leading) {
                 Text(name)
                     .font(.title).bold()
-                
-                Text("Online")
-                    .font(.caption)
-                    .foregroundColor(.gray)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
-            
-            Image(systemName: "phone.fill")
-                .foregroundColor(.gray)
-                .padding(10)
-                .background(.white)
-                .cornerRadius(50)
         }
         .padding()
     }
@@ -138,15 +116,12 @@ struct TitleRow: View {
 struct TitleRow_Previews: PreviewProvider {
     static var previews: some View {
         TitleRow()
-            .background(Color("Peach"))
+            .background(Color(.green1))
     }
 }
-
-import Foundation
 
 struct Message: Identifiable, Codable {
     var id: String
     var text: String
     var received: Bool
-    var timestamp: Date
 }

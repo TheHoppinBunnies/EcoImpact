@@ -104,7 +104,7 @@ struct SignUp: View {
         .padding(.horizontal, 25)
         .toolbar(.hidden, for: .navigationBar)
         .fullScreenCover(isPresented: $showHome) {
-            Home()
+            WelcomePage()
         }
     }
 }

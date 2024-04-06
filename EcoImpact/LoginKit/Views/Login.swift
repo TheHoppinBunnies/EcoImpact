@@ -88,7 +88,7 @@ struct Login: View {
             }
         })
         .fullScreenCover(isPresented: $showHome) {
-            Home()
+            WelcomePage()
         }
     }
 }

@@ -11,9 +11,16 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
 @main
 struct EcoImpactApp: App {
+    init() {
+        FirebaseApp.configure()
+    }
     var body: some Scene {
         WindowGroup {
             LogInAndSignUp()
         }
     }
+}
+
+#Preview {
+    LogInAndSignUp()
 }

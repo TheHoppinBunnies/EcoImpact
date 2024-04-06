@@ -40,5 +40,5 @@ struct LogInAndSignUp: View {
 }
 
 #Preview {
-    ContentView()
+    LogInAndSignUp()
 }
