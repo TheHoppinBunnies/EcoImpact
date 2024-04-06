@@ -47,7 +47,7 @@ var sampleMessages: [Message] {
       Message(id: "2", text: "1. What distance did you fly during the past year?", received: true),
       Message(id: "3", text: "2. Distance traveled by car during the past week.", received: true),
       Message(id: "4", text: "3. Distance traveled by public transport in the past week.", received: true),
-      Message(id: "5", text: "4. What is your average energy consumption per month?", received: true),
+      Message(id: "5", text: "4. What is your yearly average energy consumption?", received: true),
       Message(id: "6", text: "5. How many kilograms of meat do you eat per week?", received: true),
       
     ]

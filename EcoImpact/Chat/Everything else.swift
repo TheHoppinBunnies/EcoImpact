@@ -39,18 +39,20 @@ struct MessageFielda: View {
     @AppStorage("meatKG") var meat = 0.0
     @AppStorage("emission") var emission = 0.0
     
-    @State private var count = 0
+    @State private var count = 1
+    @State var goToFinal = false
     
     var body: some View {
         HStack {
             CustomTextField(placeholder: Text("Enter your message here"), text: $message)
                 .frame(height: 52)
                 .disableAutocorrection(true)
-                .background(Color("Gray"))
+                .background(Color(.light1))
             
             Button {
                 if count == 1 {
                     flight = Double(message) ?? 0.0
+                    print(flight)
                 } else if count == 2 {
                     car = Double(message) ?? 0.0
                 } else if count == 3 {
@@ -83,7 +85,11 @@ struct MessageFielda: View {
                         pc = (double ?? 0.0) * 52
                     }
                     
+                    print(meat + hc + fc + cc + pc)
+                    
                     emission = (meat * 16.375 * 52) + hc + fc + cc + pc
+                    
+                    goToFinal = true
                     
                 }
                 count += 1
@@ -101,6 +107,9 @@ struct MessageFielda: View {
         .background(Color("Gray"))
         .cornerRadius(50)
         .padding()
+        .fullScreenCover(isPresented: $goToFinal, content: {
+            CFResults()
+        })
     
     }
 }
