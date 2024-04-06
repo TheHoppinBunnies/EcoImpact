@@ -39,6 +39,11 @@
 		C28A3B982BBF18EE000093A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28A3B972BBF18EE000093A9 /* ContentView.swift */; };
 		C28A3B9A2BBF18F1000093A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C28A3B992BBF18F1000093A9 /* Assets.xcassets */; };
 		C28A3B9D2BBF18F1000093A9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C28A3B9C2BBF18F1000093A9 /* Preview Assets.xcassets */; };
+		C2BCD6EE2BC171270063CF24 /* ChatTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BCD6ED2BC171270063CF24 /* ChatTest.swift */; };
+		C2BCD6F12BC175C20063CF24 /* Corners.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BCD6F02BC175C20063CF24 /* Corners.swift */; };
+		C2BCD6F32BC176060063CF24 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BCD6F22BC176060063CF24 /* ChatView.swift */; };
+		C2BCD6F62BC176750063CF24 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BCD6F52BC176750063CF24 /* Model.swift */; };
+		C2BCD6F82BC178060063CF24 /* Everything else.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BCD6F72BC178060063CF24 /* Everything else.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +63,11 @@
 		C28A3B972BBF18EE000093A9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C28A3B992BBF18F1000093A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C28A3B9C2BBF18F1000093A9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C2BCD6ED2BC171270063CF24 /* ChatTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTest.swift; sourceTree = "<group>"; };
+		C2BCD6F02BC175C20063CF24 /* Corners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Corners.swift; sourceTree = "<group>"; };
+		C2BCD6F22BC176060063CF24 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatView.swift; path = Views/ChatView.swift; sourceTree = "<group>"; };
+		C2BCD6F52BC176750063CF24 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		C2BCD6F72BC178060063CF24 /* Everything else.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Everything else.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +157,7 @@
 		C28A3B942BBF18EE000093A9 /* EcoImpact */ = {
 			isa = PBXGroup;
 			children = (
+				C2BCD6EC2BC171140063CF24 /* Chat */,
 				C21025852BC0ECD300BB0614 /* GoogleService-Info.plist */,
 				C210257C2BC0C83600BB0614 /* earth.usdz */,
 				C28A3B952BBF18EE000093A9 /* EcoImpactApp.swift */,
@@ -164,6 +175,26 @@
 				C28A3B9C2BBF18F1000093A9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C2BCD6EC2BC171140063CF24 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				C2BCD6EF2BC175B50063CF24 /* Helpers */,
+				C2BCD6ED2BC171270063CF24 /* ChatTest.swift */,
+				C2BCD6F22BC176060063CF24 /* ChatView.swift */,
+				C2BCD6F52BC176750063CF24 /* Model.swift */,
+				C2BCD6F72BC178060063CF24 /* Everything else.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		C2BCD6EF2BC175B50063CF24 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C2BCD6F02BC175C20063CF24 /* Corners.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,9 +292,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2BCD6F62BC176750063CF24 /* Model.swift in Sources */,
 				C21025482BC0B8D000BB0614 /* Login.swift in Sources */,
+				C2BCD6EE2BC171270063CF24 /* ChatTest.swift in Sources */,
 				C210254C2BC0B8D000BB0614 /* LogINVIEWCONTENT.swift in Sources */,
 				C28A3B982BBF18EE000093A9 /* ContentView.swift in Sources */,
+				C2BCD6F32BC176060063CF24 /* ChatView.swift in Sources */,
+				C2BCD6F12BC175C20063CF24 /* Corners.swift in Sources */,
 				C28A3B962BBF18EE000093A9 /* EcoImpactApp.swift in Sources */,
 				C21025472BC0B8D000BB0614 /* CustomTF.swift in Sources */,
 				C210254B2BC0B8D000BB0614 /* GradientButton.swift in Sources */,
@@ -271,6 +306,7 @@
 				C21025492BC0B8D000BB0614 /* Home.swift in Sources */,
 				C210254A2BC0B8D000BB0614 /* SignUp.swift in Sources */,
 				C210254D2BC0B8D000BB0614 /* View+Extensions.swift in Sources */,
+				C2BCD6F82BC178060063CF24 /* Everything else.swift in Sources */,
 				C21025462BC0B8D000BB0614 /* ForgotPassword.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
