@@ -170,7 +170,7 @@ func HydroCarbon(consumption: Double, completion: @escaping (Double?, Error?) ->
                 do {
                     if let json = try JSONSerialization.jsonObject(with: responseData, options: []) as? [String: Any] {
                         if let carbonEquivalent = json["carbonEquivalent"] as? Double {
-                            completion(carbonEquivalent, nil)
+                                completion(carbonEquivalent/3.5, nil)
                         } else {
                             completion(nil, NSError(domain: "Unable to parse carbonEquivalent from JSON", code: -1, userInfo: nil))
                         }
