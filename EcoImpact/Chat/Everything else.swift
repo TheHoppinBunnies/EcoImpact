@@ -30,8 +30,16 @@ struct MessageBubble: View {
         }
     }
 }
-struct MessageFielda: View {
+struct MessageFielda: View {    
     @State private var message = ""
+    @AppStorage("flightDistance") var flight = 0.0
+    @AppStorage("carDistance") var car = 0.0
+    @AppStorage("publicDistance") var pTransport = 0.0
+    @AppStorage("energyConsumption") var consumption = 0.0
+    @AppStorage("meatKG") var meat = 0.0
+    @AppStorage("emission") var emission = 0.0
+    
+    @State private var count = 0
     
     var body: some View {
         HStack {
@@ -41,7 +49,44 @@ struct MessageFielda: View {
                 .background(Color("Gray"))
             
             Button {
-                send(text: message)
+                if count == 1 {
+                    flight = Double(message) ?? 0.0
+                } else if count == 2 {
+                    car = Double(message) ?? 0.0
+                } else if count == 3 {
+                    pTransport = Double(message) ?? 0.0
+                } else if count == 4 {
+                    consumption = Double(message) ?? 0.0
+                } else if count == 5 {
+                    meat = Double(message) ?? 0.0
+                } else if count == 6 {
+                    meat = Double(message) ?? 0.0
+                    var hc = 0.0
+                    let _ = HydroCarbon(consumption: consumption) { double, err in
+                        hc = double ?? 0.0
+                    }
+                    
+                    var fc = 0.0
+                    let _ = FlightCarbon(distance: flight) { double, err in
+                        fc = double ?? 0.0
+                    }
+                    
+                    var cc = 0.0
+                    
+                    let _ = CarTravelCarbon(distance: car) { double, err in
+                        cc = (double ?? 0.0) * 52
+                    }
+                    
+                    var pc = 0.0
+                    
+                    let _ = PublicTransitCarbon(distance: pTransport) { double, err in
+                        pc = (double ?? 0.0) * 52
+                    }
+                    
+                    emission = (meat * 16.375 * 52) + hc + fc + cc + pc
+                    
+                }
+                count += 1
                 message = ""
             } label: {
                 Image(systemName: "paperplane.fill")
@@ -60,12 +105,7 @@ struct MessageFielda: View {
     }
 }
 
-func send(text:String) {
-    do{
-        let newMessage = Message(id: "\(UUID())", text: text, received: false)
-    }
-    
-}
+
 struct MessageField_Previews: PreviewProvider {
     static var previews: some View {
         MessageFielda()
@@ -106,6 +146,7 @@ struct TitleRow: View {
             VStack(alignment: .leading) {
                 Text(name)
                     .font(.title).bold()
+                    .foregroundStyle(.green1)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
         }
@@ -116,7 +157,7 @@ struct TitleRow: View {
 struct TitleRow_Previews: PreviewProvider {
     static var previews: some View {
         TitleRow()
-            .background(Color(.green1))
+            .background(Color(.light1))
     }
 }
 

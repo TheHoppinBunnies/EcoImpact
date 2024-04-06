@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct CFResults: View {
+    @AppStorage("emission") var emission = 0.0
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("\(String(format: "%0.2f", emission)) kg of CO2")
+            .font(.title).bold()
+        
+        Text("Average: 16 000 kg of CO2")
     }
 }
 

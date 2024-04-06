@@ -27,7 +27,7 @@ struct CustomSceneView: UIViewRepresentable {
 }
 
 struct WelcomePage: View {
-    @State var userName = "Random"
+    @State var userName = "User"
     @State var scene: SCNScene? = .init(named: "earth.usdz")
     @State var goToChat = false
     

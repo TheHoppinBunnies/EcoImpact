@@ -31,6 +31,7 @@
 		1DAA675C2BC17FE4004C34C1 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 1DAA675B2BC17FE4004C34C1 /* FirebaseMessaging */; };
 		1DAA675E2BC18152004C34C1 /* WelcomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAA675D2BC18152004C34C1 /* WelcomePage.swift */; };
 		1DB1E1762BC1A74700913874 /* CFResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB1E1752BC1A74700913874 /* CFResults.swift */; };
+		1DB1E1782BC1B6E200913874 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB1E1772BC1B6E200913874 /* API.swift */; };
 		C21025412BC0B8D000BB0614 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21025302BC0B8D000BB0614 /* LoginViewModel.swift */; };
 		C21025462BC0B8D000BB0614 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21025372BC0B8D000BB0614 /* ForgotPassword.swift */; };
 		C21025472BC0B8D000BB0614 /* CustomTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21025382BC0B8D000BB0614 /* CustomTF.swift */; };
@@ -56,6 +57,7 @@
 /* Begin PBXFileReference section */
 		1DAA675D2BC18152004C34C1 /* WelcomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePage.swift; sourceTree = "<group>"; };
 		1DB1E1752BC1A74700913874 /* CFResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFResults.swift; sourceTree = "<group>"; };
+		1DB1E1772BC1B6E200913874 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		C21025302BC0B8D000BB0614 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		C21025372BC0B8D000BB0614 /* ForgotPassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		C21025382BC0B8D000BB0614 /* CustomTF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTF.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				C2BCD6F72BC178060063CF24 /* Everything else.swift */,
 				1DAA675D2BC18152004C34C1 /* WelcomePage.swift */,
 				1DB1E1752BC1A74700913874 /* CFResults.swift */,
+				1DB1E1772BC1B6E200913874 /* API.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				C210254A2BC0B8D000BB0614 /* SignUp.swift in Sources */,
 				C210254D2BC0B8D000BB0614 /* View+Extensions.swift in Sources */,
 				C2BCD6F82BC178060063CF24 /* Everything else.swift in Sources */,
+				1DB1E1782BC1B6E200913874 /* API.swift in Sources */,
 				C21025462BC0B8D000BB0614 /* ForgotPassword.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
