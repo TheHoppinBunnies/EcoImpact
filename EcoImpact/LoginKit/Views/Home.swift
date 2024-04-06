@@ -1,10 +1,3 @@
-//
-//  Home.swift
-//  LoginKit
-//
-//  Created by Othmane EL MARIKY on 2023-08-16.
-//
-
 import SwiftUI
 
 struct Home: View {

@@ -1,10 +1,3 @@
-//
-//  LoginViewModel.swift
-//  LoginKit
-//
-//  Created by Othmane EL MARIKY on 2023-09-04.
-//
-
 import SwiftUI
 import Firebase
 

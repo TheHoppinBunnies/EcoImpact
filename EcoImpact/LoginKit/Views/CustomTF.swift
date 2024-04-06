@@ -1,10 +1,3 @@
-//
-//  CustomTF.swift
-//  LoginKit
-//
-//  Created by Othmane EL MARIKY on 2023-08-13.
-//
-
 import SwiftUI
 
 struct CustomTF: View {

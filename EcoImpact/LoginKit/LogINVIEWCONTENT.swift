@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  LoginKit
-//
-//  Created by Othmane EL MARIKY on 2023-08-13.
-//
-
 import SwiftUI
 
 struct LogInAndSignUp: View {
@@ -13,25 +6,28 @@ struct LogInAndSignUp: View {
     
     var body: some View {
         NavigationStack {
-            Login(showSignup: $showSignup)
-                .navigationDestination(isPresented: $showSignup) {
-                    SignUp(showSignup: $showSignup)
+            ZStack {
+                Color.lightBCheck.ignoresSafeArea()
+                Login(showSignup: $showSignup)
+                    .navigationDestination(isPresented: $showSignup) {
+                        SignUp(showSignup: $showSignup)
+                    }
+            }
+            .overlay {
+                if #available(iOS 17, *) {
+                    CircleView()
+                        .animation(.bouncy(duration: 0.45, extraBounce: 0), value: showSignup)
+                } else {
+                    CircleView()
+                        .animation(.easeInOut(duration: 0.3), value: showSignup)
                 }
-        }
-        .overlay {
-            if #available(iOS 17, *) {
-                CircleView()
-                    .animation(.bouncy(duration: 0.45, extraBounce: 0), value: showSignup)
-            } else {
-                CircleView()
-                    .animation(.easeInOut(duration: 0.3), value: showSignup)
             }
         }
     }
     @ViewBuilder
     func CircleView() -> some View {
         Circle()
-            .fill(.linearGradient(colors: [.appYellow, .orange, .red], startPoint: .top, endPoint: .bottom))
+            .fill(.linearGradient(colors: [.appYellow, .green1, .blue], startPoint: .top, endPoint: .bottom))
             .frame(width: 200, height: 200)
         
             .offset(x: showSignup ? 90 : -90, y: -90)

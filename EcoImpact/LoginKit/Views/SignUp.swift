@@ -1,10 +1,3 @@
-//
-//  SignUp.swift
-//  LoginKit
-//
-//  Created by Othmane EL MARIKY on 2023-08-15.
-//
-
 import SwiftUI
 import FirebaseAuth
 

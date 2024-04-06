@@ -1,11 +1,5 @@
-//
-//  GradientButton.swift
-//  LoginKit
-//
-//  Created by Othmane EL MARIKY on 2023-08-15.
-//
-
 import SwiftUI
+import Neumorphic
 
 struct GradientButton: View {
     
@@ -23,7 +17,7 @@ struct GradientButton: View {
             .foregroundStyle(.white)
             .padding(.vertical, 12)
             .padding(.horizontal, 35)
-            .background(.linearGradient(colors: [.appYellow, .orange, .red], startPoint: .top, endPoint: .bottom), in: .capsule)
+            .background(.linearGradient(colors: [.appYellow, .green1, .blue], startPoint: .top, endPoint: .bottom), in: .capsule)
         }
     }
 }
