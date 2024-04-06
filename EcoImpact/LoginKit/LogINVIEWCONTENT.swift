@@ -7,20 +7,35 @@ struct LogInAndSignUp: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                Color.lightBCheck.ignoresSafeArea()
+                Color.light1.ignoresSafeArea()
                 Login(showSignup: $showSignup)
-                    .navigationDestination(isPresented: $showSignup) {
-                        SignUp(showSignup: $showSignup)
+                    .overlay {
+                        if #available(iOS 17, *) {
+                            CircleView()
+                                .animation(.bouncy(duration: 0.45, extraBounce: 0), value: showSignup)
+                        } else {
+                            CircleView()
+                                .animation(.easeInOut(duration: 0.3), value: showSignup)
+                        }
                     }
-            }
-            .overlay {
-                if #available(iOS 17, *) {
-                    CircleView()
-                        .animation(.bouncy(duration: 0.45, extraBounce: 0), value: showSignup)
-                } else {
-                    CircleView()
-                        .animation(.easeInOut(duration: 0.3), value: showSignup)
-                }
+                    .navigationDestination(isPresented: $showSignup) {
+                        withAnimation {
+                            ZStack {
+                                
+                                Color.light1.ignoresSafeArea()
+                                SignUp(showSignup: $showSignup)
+                                    .overlay {
+                                        if #available(iOS 17, *) {
+                                            CircleView()
+                                                .animation(.bouncy(duration: 0.45, extraBounce: 0), value: showSignup)
+                                        } else {
+                                            CircleView()
+                                                .animation(.easeInOut(duration: 0.3), value: showSignup)
+                                        }
+                                    }
+                            }
+                        }
+                    }
             }
         }
     }
