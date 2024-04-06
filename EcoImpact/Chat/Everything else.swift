@@ -61,8 +61,6 @@ struct MessageFielda: View {
                     consumption = Double(message) ?? 0.0
                 } else if count == 5 {
                     meat = Double(message) ?? 0.0
-                } else if count == 6 {
-                    meat = Double(message) ?? 0.0
                     var hc = 0.0
                     let _ = HydroCarbon(consumption: consumption) { double, err in
                         hc = double ?? 0.0
