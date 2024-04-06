@@ -12,7 +12,6 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 @main
 struct EcoImpactApp: App {
     var body: some Scene {
-        @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
         WindowGroup {
             LogInAndSignUp()
         }

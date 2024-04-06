@@ -10,31 +10,18 @@ struct LogInAndSignUp: View {
                 Color.light1.ignoresSafeArea()
                 Login(showSignup: $showSignup)
                     .overlay {
-                        if #available(iOS 17, *) {
-                            CircleView()
-                                .animation(.bouncy(duration: 0.45, extraBounce: 0), value: showSignup)
-                        } else {
-                            CircleView()
-                                .animation(.easeInOut(duration: 0.3), value: showSignup)
-                        }
+                        CircleView()
+                            .animation(.easeInOut(duration: 0.3), value: showSignup)
                     }
                     .navigationDestination(isPresented: $showSignup) {
-                        withAnimation {
-                            ZStack {
-                                
-                                Color.light1.ignoresSafeArea()
-                                SignUp(showSignup: $showSignup)
-                                    .overlay {
-                                        if #available(iOS 17, *) {
-                                            CircleView()
-                                                .animation(.bouncy(duration: 0.45, extraBounce: 0), value: showSignup)
-                                        } else {
-                                            CircleView()
-                                                .animation(.easeInOut(duration: 0.3), value: showSignup)
-                                        }
-                                    }
-                            }
-                        }
+                        ZStack {
+                            Color.light1.ignoresSafeArea()
+                            SignUp(showSignup: $showSignup)
+                                .overlay {
+                                    CircleView()
+                                        .animation(.easeInOut(duration: 0.3), value: showSignup)
+                                }
+                        }.contentTransition(.opacity)
                     }
             }
         }
