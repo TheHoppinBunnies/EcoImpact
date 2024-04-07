@@ -19,12 +19,30 @@
       }
     },
     {
+      "identity" : "arkit-smarthittest",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/maxxfrazer/ARKit-SmartHitTest",
+      "state" : {
+        "revision" : "2b7145d55ca273f1ec0328783f87e93b9473f9f5",
+        "version" : "2.0.0"
+      }
+    },
+    {
       "identity" : "firebase-ios-sdk",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/firebase/firebase-ios-sdk.git",
+      "location" : "https://github.com/firebase/firebase-ios-sdk",
       "state" : {
         "revision" : "888f0b6026e2441a69e3ee2ad5293c7a92031e62",
         "version" : "10.23.1"
+      }
+    },
+    {
+      "identity" : "focusentity",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/maxxfrazer/FocusEntity",
+      "state" : {
+        "revision" : "4b4840678c618c675a84960cf11c50a8aecc0104",
+        "version" : "1.1.1"
       }
     },
     {

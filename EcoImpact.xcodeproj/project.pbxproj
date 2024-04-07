@@ -52,6 +52,8 @@
 		C2BCD6F12BC175C20063CF24 /* Corners.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BCD6F02BC175C20063CF24 /* Corners.swift */; };
 		C2BCD6F32BC176060063CF24 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BCD6F22BC176060063CF24 /* ChatView.swift */; };
 		C2BCD6F82BC178060063CF24 /* Everything else.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BCD6F72BC178060063CF24 /* Everything else.swift */; };
+		C2E59B822BC1BD5500C094DB /* AR.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E59B812BC1BD5500C094DB /* AR.swift */; };
+		C2E59B852BC1BD8000C094DB /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = C2E59B842BC1BD8000C094DB /* FocusEntity */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +80,7 @@
 		C2BCD6F02BC175C20063CF24 /* Corners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Corners.swift; sourceTree = "<group>"; };
 		C2BCD6F22BC176060063CF24 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatView.swift; path = Views/ChatView.swift; sourceTree = "<group>"; };
 		C2BCD6F72BC178060063CF24 /* Everything else.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Everything else.swift"; sourceTree = "<group>"; };
+		C2E59B812BC1BD5500C094DB /* AR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2E59B852BC1BD8000C094DB /* FocusEntity in Frameworks */,
 				1DAA67502BC17FE4004C34C1 /* FirebaseFunctions in Frameworks */,
 				1DAA67462BC17FE4004C34C1 /* FirebaseDatabaseSwift in Frameworks */,
 				1DAA67562BC17FE4004C34C1 /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
@@ -181,6 +185,7 @@
 				C210252E2BC0B8D000BB0614 /* LoginKit */,
 				C28A3B992BBF18F1000093A9 /* Assets.xcassets */,
 				C28A3B9B2BBF18F1000093A9 /* Preview Content */,
+				C2E59B812BC1BD5500C094DB /* AR.swift */,
 			);
 			path = EcoImpact;
 			sourceTree = "<group>";
@@ -255,6 +260,7 @@
 				1DAA67572BC17FE4004C34C1 /* FirebaseInstallations */,
 				1DAA67592BC17FE4004C34C1 /* FirebaseMLModelDownloader */,
 				1DAA675B2BC17FE4004C34C1 /* FirebaseMessaging */,
+				C2E59B842BC1BD8000C094DB /* FocusEntity */,
 			);
 			productName = EcoImpact;
 			productReference = C28A3B922BBF18EE000093A9 /* EcoImpact.app */;
@@ -287,6 +293,7 @@
 			packageReferences = (
 				C21025802BC0E92100BB0614 /* XCRemoteSwiftPackageReference "neumorphic" */,
 				1DAA67302BC17FE4004C34C1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				C2E59B832BC1BD8000C094DB /* XCRemoteSwiftPackageReference "FocusEntity" */,
 			);
 			productRefGroup = C28A3B932BBF18EE000093A9 /* Products */;
 			projectDirPath = "";
@@ -333,6 +340,7 @@
 				C210254D2BC0B8D000BB0614 /* View+Extensions.swift in Sources */,
 				C2BCD6F82BC178060063CF24 /* Everything else.swift in Sources */,
 				1DB1E1782BC1B6E200913874 /* API.swift in Sources */,
+				C2E59B822BC1BD5500C094DB /* AR.swift in Sources */,
 				C21025462BC0B8D000BB0614 /* ForgotPassword.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -559,6 +567,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		C2E59B832BC1BD8000C094DB /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -676,6 +692,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C21025802BC0E92100BB0614 /* XCRemoteSwiftPackageReference "neumorphic" */;
 			productName = Neumorphic;
+		};
+		C2E59B842BC1BD8000C094DB /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C2E59B832BC1BD8000C094DB /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
