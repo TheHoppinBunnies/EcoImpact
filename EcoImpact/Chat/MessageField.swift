@@ -30,7 +30,7 @@ struct MessageBubble: View {
         }
     }
 }
-struct MessageFielda: View {    
+struct MessageField: View {
     @State private var message = ""
     @AppStorage("flightDistance") var flight = 0.0
     @AppStorage("carDistance") var car = 0.0
@@ -115,58 +115,10 @@ struct MessageFielda: View {
 
 struct MessageField_Previews: PreviewProvider {
     static var previews: some View {
-        MessageFielda()
+        MessageField()
     }
 }
 
-
-struct CustomTextField: View {
-    var placeholder: Text
-    @Binding var text: String
-    var editingChanged: (Bool)->() = { _ in }
-    var commit: ()->() = { }
-    
-    var body: some View {
-        ZStack(alignment: .leading) {
-            // If text is empty, show the placeholder on top of the TextField
-            if text.isEmpty {
-                placeholder
-                    .opacity(0.5)
-            }
-            TextField("", text: $text, onEditingChanged: editingChanged, onCommit: commit)
-        }
-    }
-}
-
-
-struct TitleRow: View {
-    var name = "Carbon Footprint Calculator"
-    
-    var body: some View {
-        HStack(spacing: 20) {
-           
-                Image("rr").resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 50, height: 50)
-                    .cornerRadius(50)
-            
-            VStack(alignment: .leading) {
-                Text(name)
-                    .font(.title).bold()
-                    .foregroundStyle(.green1)
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
-        }
-        .padding()
-    }
-}
-
-struct TitleRow_Previews: PreviewProvider {
-    static var previews: some View {
-        TitleRow()
-            .background(Color(.light1))
-    }
-}
 
 struct Message: Identifiable, Codable {
     var id: String
