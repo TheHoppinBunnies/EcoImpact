@@ -16,11 +16,7 @@ struct EcoImpactApp: App {
     }
     var body: some Scene {
         WindowGroup {
-            LogInAndSignUp()
+            ContentView()
         }
     }
-}
-
-#Preview {
-    LogInAndSignUp()
 }

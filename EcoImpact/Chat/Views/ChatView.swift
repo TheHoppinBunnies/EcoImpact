@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ChatView: View {
-    
     var body: some View {
         VStack {
             VStack {
@@ -16,7 +15,7 @@ struct ChatView: View {
                 
                 ScrollViewReader { proxy in
                     ScrollView {
-                        ForEach(sampleMessages, id: \.id) { message in
+                        ForEach(botMessages, id: \.id) { message in
                             withAnimation(.spring(duration: 2)) {
                                 MessageBubble(message: message)   
                             }
@@ -28,10 +27,9 @@ struct ChatView: View {
                 }
                 .ignoresSafeArea()
             }
-            
             .background(.light1)
             
-            MessageFielda()
+            MessageField()
         }
     }
 }
@@ -42,7 +40,7 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-var sampleMessages: [Message] {
+var botMessages: [Message] {
     [ Message(id: "1", text: "Welcome to the chat! Answer to my questions in order to calculate your carbon footprint. Please answer in complete sentences for each questions. Please write a short paragraph to answer the questions after they have all been given. Please input answers for the questions one question at a time.", received: true),
       Message(id: "2", text: "1. What distance did you fly during the past year?", received: true),
       Message(id: "3", text: "2. Distance traveled by car during the past week.", received: true),
