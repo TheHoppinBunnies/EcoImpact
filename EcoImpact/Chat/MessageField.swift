@@ -84,7 +84,7 @@ struct MessageField: View {
         .cornerRadius(50)
         .padding()
         .fullScreenCover(isPresented: $goToFinal, content: {
-            CFResults()
+            ResultsPage()
         })
     
     }

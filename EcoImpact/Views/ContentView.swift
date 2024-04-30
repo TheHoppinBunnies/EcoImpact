@@ -8,28 +8,34 @@
 import SwiftUI
 
 struct ContentView: View {
-    
     @State private var showSignup: Bool = false
+    @AppStorage("isSignedIn") private var isSignedIn = false
     
     var body: some View {
         NavigationStack {
-            ZStack {
-                Color.light1.ignoresSafeArea()
-                Login(showSignup: $showSignup)
-                    .overlay {
-                        CircleView()
-                            .animation(.easeInOut(duration: 0.3), value: showSignup)
+            Group {
+                if isSignedIn {
+                    ResultsPage()
+                } else {
+                    ZStack {
+                        Color.light1.ignoresSafeArea()
+                        Login(showSignup: $showSignup)
+                            .overlay {
+                                CircleView()
+                                    .animation(.easeInOut(duration: 0.3), value: showSignup)
+                            }
+                            .navigationDestination(isPresented: $showSignup) {
+                                ZStack {
+                                    Color.light1.ignoresSafeArea()
+                                    SignUp(showSignup: $showSignup)
+                                        .overlay {
+                                            CircleView()
+                                                .animation(.easeInOut(duration: 0.3), value: showSignup)
+                                        }
+                                }.contentTransition(.opacity)
+                            }
                     }
-                    .navigationDestination(isPresented: $showSignup) {
-                        ZStack {
-                            Color.light1.ignoresSafeArea()
-                            SignUp(showSignup: $showSignup)
-                                .overlay {
-                                    CircleView()
-                                        .animation(.easeInOut(duration: 0.3), value: showSignup)
-                                }
-                        }.contentTransition(.opacity)
-                    }
+                }
             }
         }
     }

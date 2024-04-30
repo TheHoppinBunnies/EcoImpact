@@ -11,6 +11,7 @@ struct Login: View {
     @State private var errorIsPresented = false
     @State var showHome = false
     @StateObject var loginModel: LoginViewModel = .init()
+    @AppStorage("isSignedIn") private var isSignedIn = false
     
     var body: some View {
         VStack(alignment: .leading, spacing: 15) {
@@ -41,13 +42,7 @@ struct Login: View {
                 .hSpacing(.trailing)
                 
                 GradientButton(title: "Login", icon: "arrow.right") {
-                    Auth.auth().signIn(withEmail: emailID, password: password) { (result, error) in
-                        if error != nil {
-                            errorMessage = error?.localizedDescription ?? ""
-                        } else {
-                            showHome.toggle()
-                        }
-                    }
+                    SignIn()
                 }
                 .hSpacing(.trailing)
                 .disableWithOpacity(emailID.isEmpty || password.isEmpty)
@@ -89,6 +84,18 @@ struct Login: View {
         })
         .fullScreenCover(isPresented: $showHome) {
             WelcomePage()
+        }
+    }
+    
+    func SignIn() {
+        Auth.auth().signIn(withEmail: emailID, password: password) { (result, error) in
+            if error != nil {
+                errorIsPresented = true
+                errorMessage = error?.localizedDescription ?? ""
+            } else {
+                isSignedIn = true
+                showHome.toggle()
+            }
         }
     }
 }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CFResults: View {
+struct ResultsPage: View {
     @AppStorage("emission") var emission = 0.0
     var body: some View {
         VStack {
@@ -20,5 +20,5 @@ struct CFResults: View {
 }
 
 #Preview {
-    CFResults()
+    ResultsPage()
 }

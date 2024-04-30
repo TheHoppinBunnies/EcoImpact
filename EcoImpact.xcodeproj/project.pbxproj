@@ -31,12 +31,11 @@
 		1DAA675C2BC17FE4004C34C1 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 1DAA675B2BC17FE4004C34C1 /* FirebaseMessaging */; };
 		1DAA675E2BC18152004C34C1 /* WelcomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAA675D2BC18152004C34C1 /* WelcomePage.swift */; };
 		1DB1E1762BC1A74700913874 /* ResultsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB1E1752BC1A74700913874 /* ResultsPage.swift */; };
-		1DB1E1782BC1B6E200913874 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB1E1772BC1B6E200913874 /* API.swift */; };
+		1DB1E1782BC1B6E200913874 /* CarbonCalculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB1E1772BC1B6E200913874 /* CarbonCalculations.swift */; };
 		C21025412BC0B8D000BB0614 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21025302BC0B8D000BB0614 /* LoginViewModel.swift */; };
 		C21025462BC0B8D000BB0614 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21025372BC0B8D000BB0614 /* ForgotPassword.swift */; };
 		C21025472BC0B8D000BB0614 /* CustomTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21025382BC0B8D000BB0614 /* CustomTF.swift */; };
 		C21025482BC0B8D000BB0614 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21025392BC0B8D000BB0614 /* Login.swift */; };
-		C21025492BC0B8D000BB0614 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C210253A2BC0B8D000BB0614 /* Home.swift */; };
 		C210254A2BC0B8D000BB0614 /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C210253B2BC0B8D000BB0614 /* SignUp.swift */; };
 		C210254B2BC0B8D000BB0614 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C210253C2BC0B8D000BB0614 /* GradientButton.swift */; };
 		C210254D2BC0B8D000BB0614 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C210253F2BC0B8D000BB0614 /* View+Extensions.swift */; };
@@ -51,21 +50,20 @@
 		C2BCD6F32BC176060063CF24 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BCD6F22BC176060063CF24 /* ChatView.swift */; };
 		C2BCD6F82BC178060063CF24 /* MessageField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BCD6F72BC178060063CF24 /* MessageField.swift */; };
 		C2E59B822BC1BD5500C094DB /* AR.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E59B812BC1BD5500C094DB /* AR.swift */; };
-		C2E59B852BC1BD8000C094DB /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = C2E59B842BC1BD8000C094DB /* FocusEntity */; };
-		C2F4B6E92BDD42D0003950F6 /* CustomTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F4B6E82BDD42D0003950F6 /* CustomTF.swift */; };
+		C2F4B6E92BDD42D0003950F6 /* CustomChatTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F4B6E82BDD42D0003950F6 /* CustomChatTF.swift */; };
 		C2F4B6EB2BDD42FB003950F6 /* TitleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F4B6EA2BDD42FB003950F6 /* TitleRow.swift */; };
 		C2F4B6ED2BDD431D003950F6 /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F4B6EC2BDD431D003950F6 /* MessageBubble.swift */; };
+		C2F4B6F72BDD49A3003950F6 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = C2F4B6F62BDD49A3003950F6 /* FocusEntity */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1DAA675D2BC18152004C34C1 /* WelcomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePage.swift; sourceTree = "<group>"; };
 		1DB1E1752BC1A74700913874 /* ResultsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsPage.swift; sourceTree = "<group>"; };
-		1DB1E1772BC1B6E200913874 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		1DB1E1772BC1B6E200913874 /* CarbonCalculations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarbonCalculations.swift; sourceTree = "<group>"; };
 		C21025302BC0B8D000BB0614 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		C21025372BC0B8D000BB0614 /* ForgotPassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		C21025382BC0B8D000BB0614 /* CustomTF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTF.swift; sourceTree = "<group>"; };
 		C21025392BC0B8D000BB0614 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
-		C210253A2BC0B8D000BB0614 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		C210253B2BC0B8D000BB0614 /* SignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		C210253C2BC0B8D000BB0614 /* GradientButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		C210253F2BC0B8D000BB0614 /* View+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
@@ -80,7 +78,7 @@
 		C2BCD6F22BC176060063CF24 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatView.swift; path = Views/ChatView.swift; sourceTree = "<group>"; };
 		C2BCD6F72BC178060063CF24 /* MessageField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageField.swift; sourceTree = "<group>"; };
 		C2E59B812BC1BD5500C094DB /* AR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR.swift; sourceTree = "<group>"; };
-		C2F4B6E82BDD42D0003950F6 /* CustomTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTF.swift; sourceTree = "<group>"; };
+		C2F4B6E82BDD42D0003950F6 /* CustomChatTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomChatTF.swift; sourceTree = "<group>"; };
 		C2F4B6EA2BDD42FB003950F6 /* TitleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleRow.swift; sourceTree = "<group>"; };
 		C2F4B6EC2BDD431D003950F6 /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2E59B852BC1BD8000C094DB /* FocusEntity in Frameworks */,
+				C2F4B6F72BDD49A3003950F6 /* FocusEntity in Frameworks */,
 				1DAA67502BC17FE4004C34C1 /* FirebaseFunctions in Frameworks */,
 				1DAA67462BC17FE4004C34C1 /* FirebaseDatabaseSwift in Frameworks */,
 				1DAA67562BC17FE4004C34C1 /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
@@ -144,7 +142,6 @@
 				C21025372BC0B8D000BB0614 /* ForgotPassword.swift */,
 				C21025382BC0B8D000BB0614 /* CustomTF.swift */,
 				C21025392BC0B8D000BB0614 /* Login.swift */,
-				C210253A2BC0B8D000BB0614 /* Home.swift */,
 				C210253B2BC0B8D000BB0614 /* SignUp.swift */,
 				C210253C2BC0B8D000BB0614 /* GradientButton.swift */,
 			);
@@ -178,7 +175,9 @@
 		C28A3B942BBF18EE000093A9 /* EcoImpact */ = {
 			isa = PBXGroup;
 			children = (
+				C2F4B6F22BDD4567003950F6 /* Firebase */,
 				C28A3B952BBF18EE000093A9 /* EcoImpactApp.swift */,
+				C2F4B6F12BDD4507003950F6 /* API */,
 				C2F4B6EF2BDD437B003950F6 /* AR */,
 				C2F4B6EE2BDD4365003950F6 /* Views */,
 				C2BCD6EC2BC171140063CF24 /* Chat */,
@@ -204,7 +203,6 @@
 				C2BCD6F22BC176060063CF24 /* ChatView.swift */,
 				C2BCD6F72BC178060063CF24 /* MessageField.swift */,
 				C2F4B6EC2BDD431D003950F6 /* MessageBubble.swift */,
-				1DB1E1772BC1B6E200913874 /* API.swift */,
 				C2F4B6EA2BDD42FB003950F6 /* TitleRow.swift */,
 			);
 			path = Chat;
@@ -214,7 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				C2BCD6F02BC175C20063CF24 /* Corners.swift */,
-				C2F4B6E82BDD42D0003950F6 /* CustomTF.swift */,
+				C2F4B6E82BDD42D0003950F6 /* CustomChatTF.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -245,6 +243,21 @@
 				C21025852BC0ECD300BB0614 /* GoogleService-Info.plist */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		C2F4B6F12BDD4507003950F6 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				1DB1E1772BC1B6E200913874 /* CarbonCalculations.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C2F4B6F22BDD4567003950F6 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Firebase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,7 +300,7 @@
 				1DAA67572BC17FE4004C34C1 /* FirebaseInstallations */,
 				1DAA67592BC17FE4004C34C1 /* FirebaseMLModelDownloader */,
 				1DAA675B2BC17FE4004C34C1 /* FirebaseMessaging */,
-				C2E59B842BC1BD8000C094DB /* FocusEntity */,
+				C2F4B6F62BDD49A3003950F6 /* FocusEntity */,
 			);
 			productName = EcoImpact;
 			productReference = C28A3B922BBF18EE000093A9 /* EcoImpact.app */;
@@ -320,7 +333,7 @@
 			packageReferences = (
 				C21025802BC0E92100BB0614 /* XCRemoteSwiftPackageReference "neumorphic" */,
 				1DAA67302BC17FE4004C34C1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				C2E59B832BC1BD8000C094DB /* XCRemoteSwiftPackageReference "FocusEntity" */,
+				C2F4B6F52BDD49A3003950F6 /* XCRemoteSwiftPackageReference "FocusEntity" */,
 			);
 			productRefGroup = C28A3B932BBF18EE000093A9 /* Products */;
 			projectDirPath = "";
@@ -362,12 +375,11 @@
 				C2F4B6ED2BDD431D003950F6 /* MessageBubble.swift in Sources */,
 				C210254B2BC0B8D000BB0614 /* GradientButton.swift in Sources */,
 				C21025412BC0B8D000BB0614 /* LoginViewModel.swift in Sources */,
-				C21025492BC0B8D000BB0614 /* Home.swift in Sources */,
 				C210254A2BC0B8D000BB0614 /* SignUp.swift in Sources */,
 				C210254D2BC0B8D000BB0614 /* View+Extensions.swift in Sources */,
 				C2BCD6F82BC178060063CF24 /* MessageField.swift in Sources */,
-				1DB1E1782BC1B6E200913874 /* API.swift in Sources */,
-				C2F4B6E92BDD42D0003950F6 /* CustomTF.swift in Sources */,
+				1DB1E1782BC1B6E200913874 /* CarbonCalculations.swift in Sources */,
+				C2F4B6E92BDD42D0003950F6 /* CustomChatTF.swift in Sources */,
 				C2E59B822BC1BD5500C094DB /* AR.swift in Sources */,
 				C21025462BC0B8D000BB0614 /* ForgotPassword.swift in Sources */,
 			);
@@ -595,7 +607,7 @@
 				minimumVersion = 1.0.0;
 			};
 		};
-		C2E59B832BC1BD8000C094DB /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+		C2F4B6F52BDD49A3003950F6 /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
 			requirement = {
@@ -721,9 +733,9 @@
 			package = C21025802BC0E92100BB0614 /* XCRemoteSwiftPackageReference "neumorphic" */;
 			productName = Neumorphic;
 		};
-		C2E59B842BC1BD8000C094DB /* FocusEntity */ = {
+		C2F4B6F62BDD49A3003950F6 /* FocusEntity */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C2E59B832BC1BD8000C094DB /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			package = C2F4B6F52BDD49A3003950F6 /* XCRemoteSwiftPackageReference "FocusEntity" */;
 			productName = FocusEntity;
 		};
 /* End XCSwiftPackageProductDependency section */

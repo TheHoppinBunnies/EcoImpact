@@ -13,6 +13,7 @@ struct SignUp: View {
     @State private var errorMessage = ""
     @State private var showError = false
     @State private var showHome = false
+    @AppStorage("isSignedIn") private var isSignedIn = false
     
     var body: some View {
         VStack(alignment: .leading, spacing: 15) {
@@ -71,14 +72,7 @@ struct SignUp: View {
                 }
                 
                 GradientButton(title: "Continue", icon: "arrow.right") {
-                    Auth.auth().createUser(withEmail: emailID, password: password) { _, error in
-                        if error != nil {
-                            showError.toggle()
-                            errorMessage = error?.localizedDescription ?? ""
-                        } else {
-                            showHome.toggle()
-                        }
-                    }
+                    SignUp()
                 }
                 .hSpacing(.trailing)
                 .disableWithOpacity(emailID.isEmpty || password.isEmpty || fullName.isEmpty || confirmPassword.isEmpty || !passwordsMatch)
@@ -105,6 +99,18 @@ struct SignUp: View {
         .toolbar(.hidden, for: .navigationBar)
         .fullScreenCover(isPresented: $showHome) {
             WelcomePage()
+        }
+    }
+    
+    func SignUp() {
+        Auth.auth().createUser(withEmail: emailID, password: password) { _, error in
+            if error != nil {
+                showError.toggle()
+                errorMessage = error?.localizedDescription ?? ""
+            } else {
+                isSignedIn = true
+                showHome.toggle()
+            }
         }
     }
 }
